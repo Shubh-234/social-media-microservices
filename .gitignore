@@ -1,7 +1,7 @@
 api-gateway/src/.env
 identity-service/src/.env
 post-service/src/.env
-media-servicey/src/.env
+media-service/src/.env
 api-gateway/src/node_modules
 identity-service/src/node_modules
 post-service/src/node_modules
