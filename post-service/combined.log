@@ -1,0 +1,124 @@
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:06:45.046Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:06:45.580Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:19:49.333Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:19:49.826Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:36:22.875Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:36:23.377Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:36:33.634Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:36:34.126Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:37:49.875Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:37:50.393Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:40:04.674Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:40:05.190Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:40:11.351Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:40:11.861Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:40:19.861Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:40:20.366Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"identity-service","timestamp":"2025-05-20T10:46:58.066Z"}
+{"level":"info","message":"Connted to mongo db","service":"identity-service","timestamp":"2025-05-20T10:46:58.579Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-20T10:47:33.948Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-20T10:47:34.470Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-20T10:48:09.101Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-20T10:48:09.596Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T04:50:33.753Z"}
+{"level":"error","message":"unable to connect to mongo db","service":"post-service","timestamp":"2025-05-21T04:51:03.802Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T04:52:52.300Z"}
+{"level":"error","message":"unable to connect to mongo db","service":"post-service","timestamp":"2025-05-21T04:53:22.351Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T04:57:07.838Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T04:57:09.770Z"}
+{"level":"info","message":"Received undefined request to url : /api/post/create-post","service":"post-service","timestamp":"2025-05-21T05:11:20.084Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T05:11:20.085Z"}
+{"level":"info","message":"entering creat post controller....","service":"post-service","timestamp":"2025-05-21T05:11:20.087Z"}
+{"level":"info","message":"post created successfully: {\n  user: new ObjectId('682ad101e0af40d795b0a6c6'),\n  content: 'this is the first post content',\n  mediaIds: [],\n  _id: new ObjectId('682d607826662375b9ae2873'),\n  createdAt: 2025-05-21T05:11:20.094Z,\n  updatedAt: 2025-05-21T05:11:20.094Z,\n  __v: 0\n}","service":"post-service","timestamp":"2025-05-21T05:11:20.157Z"}
+{"level":"warn","message":"error while creating post: TypeError: res.stauts is not a function","service":"post-service","timestamp":"2025-05-21T05:11:20.158Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T05:12:09.496Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T05:12:10.584Z"}
+{"level":"info","message":"Received undefined request to url : /api/post/create-post","service":"post-service","timestamp":"2025-05-21T05:12:14.188Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T05:12:14.188Z"}
+{"level":"info","message":"entering creat post controller....","service":"post-service","timestamp":"2025-05-21T05:12:14.189Z"}
+{"level":"info","message":"post created successfully: {\n  user: new ObjectId('682ad101e0af40d795b0a6c6'),\n  content: 'this is the first post content',\n  mediaIds: [],\n  _id: new ObjectId('682d60ae865d999538c5c9f2'),\n  createdAt: 2025-05-21T05:12:14.197Z,\n  updatedAt: 2025-05-21T05:12:14.197Z,\n  __v: 0\n}","service":"post-service","timestamp":"2025-05-21T05:12:14.242Z"}
+{"level":"info","message":"Received undefined request to url : /api/post/create-post","service":"post-service","timestamp":"2025-05-21T05:13:33.572Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T05:13:33.572Z"}
+{"level":"info","message":"entering creat post controller....","service":"post-service","timestamp":"2025-05-21T05:13:33.573Z"}
+{"level":"info","message":"post created successfully: {\n  user: new ObjectId('682ad101e0af40d795b0a6c6'),\n  content: 'this is the second post content',\n  mediaIds: [],\n  _id: new ObjectId('682d60fd865d999538c5c9f4'),\n  createdAt: 2025-05-21T05:13:33.574Z,\n  updatedAt: 2025-05-21T05:13:33.574Z,\n  __v: 0\n}","service":"post-service","timestamp":"2025-05-21T05:13:33.611Z"}
+{"level":"info","message":"Received undefined request to url : /api/post/create-post","service":"post-service","timestamp":"2025-05-21T05:13:52.100Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T05:13:52.100Z"}
+{"level":"info","message":"entering creat post controller....","service":"post-service","timestamp":"2025-05-21T05:13:52.101Z"}
+{"level":"info","message":"post created successfully: {\n  user: new ObjectId('682abd6890be08c8b463fc8b'),\n  content: 'this is the second post content',\n  mediaIds: [],\n  _id: new ObjectId('682d6110865d999538c5c9f6'),\n  createdAt: 2025-05-21T05:13:52.102Z,\n  updatedAt: 2025-05-21T05:13:52.102Z,\n  __v: 0\n}","service":"post-service","timestamp":"2025-05-21T05:13:52.194Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T05:27:54.222Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T05:27:55.291Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T05:27:58.758Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T05:27:59.625Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T05:28:15.059Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T05:28:16.486Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T05:29:34.863Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T05:29:36.019Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:09:10.365Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:09:11.298Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:09:21.420Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:09:22.295Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:11:33.873Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:11:34.739Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:14:00.957Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:14:01.954Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:15:59.043Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:15:59.749Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:16:18.496Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:16:19.355Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:18:45.606Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:18:46.447Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:21:41.579Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:21:42.355Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:22:57.739Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:22:58.774Z"}
+{"level":"info","message":"Received undefined request to url : /api/post/posts","service":"post-service","timestamp":"2025-05-21T06:23:54.029Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:23:54.031Z"}
+{"level":"error","message":"error while getting posts TypeError: req.redisClient is not a function","service":"post-service","timestamp":"2025-05-21T06:23:54.034Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:24:41.372Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:24:42.989Z"}
+{"level":"info","message":"Received undefined request to url : /api/post/posts","service":"post-service","timestamp":"2025-05-21T06:24:45.894Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:24:45.895Z"}
+{"level":"error","message":"error while getting posts TypeError: req.redisClient is not a function","service":"post-service","timestamp":"2025-05-21T06:24:45.898Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:25:05.175Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:25:09.105Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:29:19.675Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:29:20.483Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:29:59.240Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:29:59.868Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:30:14.170Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:30:15.128Z"}
+{"level":"info","message":"Received GET request to url : /api/post/posts","service":"post-service","timestamp":"2025-05-21T06:30:15.224Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:30:15.225Z"}
+{"level":"error","message":"error while getting posts ReferenceError: totalPages is not defined","service":"post-service","timestamp":"2025-05-21T06:30:15.614Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:31:43.662Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:31:45.348Z"}
+{"level":"info","message":"Received GET request to url : /api/post/posts","service":"post-service","timestamp":"2025-05-21T06:31:45.706Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:31:45.707Z"}
+{"level":"error","message":"error while getting posts TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle","service":"post-service","timestamp":"2025-05-21T06:31:47.147Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:32:53.976Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:32:56.230Z"}
+{"level":"info","message":"Received GET request to url : /api/post/posts","service":"post-service","timestamp":"2025-05-21T06:33:01.262Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:33:01.263Z"}
+{"level":"error","message":"error while getting posts TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle","service":"post-service","timestamp":"2025-05-21T06:33:01.483Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:33:48.305Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:33:49.094Z"}
+{"level":"info","message":"Received GET request to url : /api/post/posts","service":"post-service","timestamp":"2025-05-21T06:33:52.787Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:33:52.788Z"}
+{"level":"info","message":"Received GET request to url : /api/post/post/682d6110865d999538c5c9f6","service":"post-service","timestamp":"2025-05-21T06:34:14.060Z"}
+{"level":"info","message":"request body: [object Object]","service":"post-service","timestamp":"2025-05-21T06:34:14.061Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:48:45.829Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:48:46.905Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:49:33.111Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:49:33.863Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:52:31.150Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:52:32.332Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T06:57:41.631Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T06:57:42.541Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T07:27:25.277Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T07:27:26.018Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-21T07:38:48.532Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-21T07:38:50.246Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-23T08:30:38.961Z"}
+{"level":"info","message":"Connted to mongo db","service":"post-service","timestamp":"2025-05-23T08:30:41.212Z"}
+{"level":"info","message":"Post service is running at port 3002","service":"post-service","timestamp":"2025-05-23T13:34:17.725Z"}
+{"level":"info","message":"conntected to mongo db","service":"post-service","timestamp":"2025-05-23T13:34:18.503Z"}
