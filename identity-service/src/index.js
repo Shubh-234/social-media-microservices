@@ -23,7 +23,7 @@ then(() => logger.info("Connected to mongo db")).
 catch((e) => logger.error("Mongo db connection error",e));
 
 
-const redisClient = new Redis(process.env.redis_url)
+const redisClient = new Redis(process.env.redis_url || 'redis://localhost:6379')
 
 
 //middlewares

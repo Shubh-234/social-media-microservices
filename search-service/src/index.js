@@ -19,7 +19,7 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
 const app = express();
 const PORT = process.env.port;
 
-const redisClient = new Redis(process.env.redis_url);
+const redisClient = new Redis(process.env.redis_url || 'redis://localhost:6379');
 
 mongoose.connect(process.env.mongo_url)
 .then(() => logger.info(`connected to mongo db`))

@@ -19,7 +19,7 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-const redisClient = new Redis(process.env.redis_url)
+const redisClient = new Redis(process.env.redis_url || 'redis://localhost:6379')
 
 //rate limiting
 const rateLimitOptions = rateLimit({
