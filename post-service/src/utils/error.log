@@ -1,2 +1,0 @@
-{"level":"error","message":"Error connecting to rabbitmq TypeError: channel.assertExchange is not a function","service":"post-service","timestamp":"2025-05-25T14:34:33.939Z"}
-{"level":"info","message":"Connected to rabbitmq","service":"post-service","timestamp":"2025-05-25T14:36:05.372Z"}
