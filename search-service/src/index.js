@@ -5,27 +5,25 @@ const helmet = require('helmet');
 const {Redis} = require('ioredis');
 const mongoose = require('mongoose');
 const path = require('path')
-const {connectToRabbitmq} = require('./utils/rabbitmq')
+const {connectToRabbitmq,consumeEvent} = require('./utils/rabbitmq')
+const {updateSearchAfterPost,updateSearchAfterPostDelete} = require('./eventHandlers/eventHandlers')
+
+const searchRoutes = require('./routes/searchRoutes')
 
 
 const logger = require('./utils/logger');
 const {handleErrors} = require('./middlewares/errorHandler');
-const postRoutes = require('./routes/postRoutes');
 
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 const app = express();
 const PORT = process.env.port;
 
-try {
-    mongoose.connect(process.env.mongo_url).
-   then(() => logger.info(`conntected to mongo db`)).
-   catch(() => logger.error(`unable to connect to mongo db`));
-} catch (error) {
-    console.log(error)
-}
-
 const redisClient = new Redis(process.env.redis_url);
+
+mongoose.connect(process.env.mongo_url)
+.then(() => logger.info(`connected to mongo db`))
+.catch((e) => logger.error(`unable to connect to mongo db ${e}`))
 
 app.use(helmet());
 app.use(cors());
@@ -37,18 +35,12 @@ app.use((req,res,next) => {
     next();
 })
 
-
-//implement ip based rate limiting for sensitive endpoints
-
-
-//routes
-app.use('/api/post', (req, res, next) => {
-    req.redisClient = redisClient;  // fixed typo
+app.use('/api/search', (req, res, next) => {
+    req.redisClient = redisClient;  
     next();
 });
 
-// Then attach the router separately
-app.use('/api/post', postRoutes);
+app.use('/api/search', searchRoutes);
 
 app.use(handleErrors);
 
@@ -57,11 +49,18 @@ app.use(handleErrors);
 async function startServer () {
     try {
         await connectToRabbitmq();
+        
+        await consumeEvent("post.created",updateSearchAfterPost);
+
+        await consumeEvent("post.deleted",updateSearchAfterPostDelete);
+
         app.listen(PORT,() => {
-          logger.info(`Post service is running at port ${PORT}`);
+          logger.info(`Search service is running at port ${PORT}`);
         })
+
+        logger.info(`Redis is running at port ${process.env.redis_url}`)
     } catch (error) {
-        logger.error(`failed tp connect to server`);
+        logger.error(`failed to connect to server`);
         process.exit(1);
     }
 }
@@ -71,6 +70,3 @@ startServer();
 process.on("unhandledRejection" , (reason,promise) => {
     logger.error(`unhanlded rejection at promise : ${promise} due to ${reason}`);
 })
-
-
-

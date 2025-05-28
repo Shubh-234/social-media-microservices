@@ -7,6 +7,9 @@ const logger = require('./utils/logger');
 const mediaRouter = require('./routes/mediaRoutes');
 const path = require('path');
 const {handleErrors} = require('./middlewares/errorHandler')
+const {connectToRabbitmq} = require('./utils/rabbitMQ');
+const {consumeEvent} = require('./utils/rabbitMQ');
+const {handlePostDeleted} = require('./eventHandler/event_handler')
 
 dotenv.config({path : path.resolve(__dirname,'./env')})
 
@@ -41,9 +44,22 @@ app.use('/api/media', mediaRouter);
 app.use(handleErrors);
 
 
-app.listen(PORT,() => {
-    logger.info(`Media service is running at port ${PORT}`);
-})
+async function startServer () {
+    try {
+        await connectToRabbitmq();
+
+        await consumeEvent("post.deleted",handlePostDeleted);
+
+        app.listen(PORT,() => {
+          logger.info(`Media service is running at port ${PORT}`);
+        })
+    } catch (error) {
+        logger.error(`failed to connect to server`);
+        process.exit(1);
+    }
+}
+
+startServer()
 
 process.on("unhandledRejection" , (reason,promise) => {
     logger.error(`unhanlded rejection at promise : ${promise} due to ${reason}`);

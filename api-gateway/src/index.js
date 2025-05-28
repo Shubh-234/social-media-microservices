@@ -102,7 +102,22 @@ app.use('/v1/media',validateToken,proxy(process.env.MEDIA_SERVICE_URL,{
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from post service: ${proxyRes.statusCode}`
+        `Response received from media service: ${proxyRes.statusCode}`
+      );
+
+      return proxyResData;
+    },
+}))
+
+app.use('/v1/search',validateToken,proxy(process.env.SEARCH_SERVICE_URL,{
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts,srcReq) => {
+        proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
+        return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from search service: ${proxyRes.statusCode}`
       );
 
       return proxyResData;
@@ -114,5 +129,7 @@ app.listen(PORT,()=> {
     logger.info(`api gateway is running at port ${PORT}`);
     logger.info(`Identity service is running at url ${process.env.IDENTITY_SERVICE_URL}`);
     logger.info(`Post service is running at url ${process.env.POST_SERVICE_URL}`);
+    logger.info(`Media service is running at port ${process.env.MEDIA_SERVICE_URL}`);
+    logger.info(`Search service is running at port ${process.env.SEARCH_SERVICE_URL}`);
     logger.info(`Redis url: ${process.env.REDIS_URL}`)
 })

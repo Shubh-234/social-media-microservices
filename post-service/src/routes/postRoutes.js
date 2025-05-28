@@ -9,7 +9,7 @@ router.use(authenticatedReq);
 router.post('/create-post',createPost);
 router.get('/posts',getAllPost);
 router.get('/post/:id',getPost);
-router.delete('post/delete/:id',deletePost);
+router.delete('/post/delete/:id',deletePost);
 
 
 

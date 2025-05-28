@@ -1,9 +1,12 @@
 api-gateway/src/.env
 identity-service/src/.env
 post-service/src/.env
-media-service/src/.env
+media-service/src/.
+search-service/src/.env
 api-gateway/node_modules
 identity-service/node_modules
 post-service/node_modules
 media-service/node_modules
+search-service/node_modules
 
+*.log

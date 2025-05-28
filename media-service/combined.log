@@ -4,3 +4,149 @@
 {"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-23T08:33:07.784Z"}
 {"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-23T13:34:53.624Z"}
 {"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-23T13:34:54.286Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T10:47:09.071Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T10:47:09.544Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T10:54:54.343Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T10:54:54.345Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T10:56:27.415Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T10:56:27.415Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T10:56:27.429Z"}
+{"level":"info","message":"uploading the file undefined with the type undefined","service":"media-service","timestamp":"2025-05-25T10:56:27.435Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-25T10:56:27.436Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-25T10:56:27.437Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - sbdyxgguqhghf6rhcqtg","service":"media-service","timestamp":"2025-05-25T10:56:37.329Z"}
+{"level":"error","message":"error uploading media in the media controller","service":"media-service","timestamp":"2025-05-25T10:56:37.349Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T10:57:56.256Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T10:57:57.733Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T10:58:09.764Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T10:58:09.766Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T10:58:09.787Z"}
+{"level":"info","message":"uploading the file undefined with the type undefined","service":"media-service","timestamp":"2025-05-25T10:58:09.795Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-25T10:58:09.796Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-25T10:58:09.796Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - i9dsbiyjwudbwd1xlnid","service":"media-service","timestamp":"2025-05-25T10:58:15.141Z"}
+{"level":"error","message":"error uploading media in the media controller","service":"media-service","timestamp":"2025-05-25T10:58:15.159Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T10:58:36.834Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T10:58:40.563Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T10:59:49.032Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T10:59:50.677Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T10:59:50.679Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T10:59:50.700Z"}
+{"level":"info","message":"uploading the file undefined with the type undefined","service":"media-service","timestamp":"2025-05-25T10:59:50.708Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-25T10:59:50.709Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-25T10:59:50.710Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T10:59:56.030Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - qmpbob6qox8komqsrqma","service":"media-service","timestamp":"2025-05-25T10:59:59.350Z"}
+{"level":"error","message":"error uploading media in the media controller","service":"media-service","timestamp":"2025-05-25T10:59:59.368Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T11:09:11.543Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T11:09:13.091Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T11:09:23.910Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T11:09:23.911Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T11:09:23.934Z"}
+{"level":"info","message":"uploading the file undefined with the type undefined","service":"media-service","timestamp":"2025-05-25T11:09:23.945Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-25T11:09:23.946Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-25T11:09:23.947Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - dje1whb3byukxpcxgmqz","service":"media-service","timestamp":"2025-05-25T11:09:29.574Z"}
+{"level":"error","message":"error uploading media in the media controller","service":"media-service","timestamp":"2025-05-25T11:09:29.593Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T11:12:13.285Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T11:12:13.763Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T11:12:16.061Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T11:12:16.062Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T11:12:16.081Z"}
+{"level":"info","message":"uploading the file undefined with the type undefined","service":"media-service","timestamp":"2025-05-25T11:12:16.089Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-25T11:12:16.091Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-25T11:12:16.091Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - ctlfmaqif7s6eo7imhny","service":"media-service","timestamp":"2025-05-25T11:12:20.433Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T11:14:02.104Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T11:14:02.907Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T11:14:51.866Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T11:14:51.867Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T11:14:51.886Z"}
+{"level":"error","message":"error uploading media in the media controller","service":"media-service","timestamp":"2025-05-25T11:14:51.896Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T11:16:35.161Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T11:16:35.162Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T11:16:35.166Z"}
+{"level":"error","message":"error uploading media in the media controller","service":"media-service","timestamp":"2025-05-25T11:16:35.169Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-25T11:16:57.743Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-25T11:16:58.230Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-25T11:17:06.229Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-25T11:17:06.231Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-25T11:17:06.250Z"}
+{"level":"info","message":"uploading the file Screenshot 2024-08-01 141505.png with the type image/png","service":"media-service","timestamp":"2025-05-25T11:17:06.258Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-25T11:17:06.259Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-25T11:17:06.261Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - ktevnqq3wjakgnjfwwy6","service":"media-service","timestamp":"2025-05-25T11:17:08.058Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T09:50:09.566Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T09:50:17.615Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T13:29:34.821Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T13:29:36.156Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T13:42:26.774Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T13:42:33.402Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T13:48:01.906Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T13:48:03.132Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T13:56:41.090Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T13:56:41.971Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T13:57:34.638Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T13:57:36.999Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-27T13:59:12.010Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T13:59:12.015Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T13:59:12.588Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-27T14:06:56.324Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-27T14:06:56.370Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T14:06:56.376Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T14:06:57.510Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-27T14:20:55.669Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-27T14:20:55.670Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-27T14:20:55.686Z"}
+{"level":"info","message":"uploading the file Screenshot 2025-05-23 154211.png with the type image/png","service":"media-service","timestamp":"2025-05-27T14:20:55.697Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-27T14:20:55.698Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-27T14:20:55.699Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - cjomp0rzcyujenrudhca","service":"media-service","timestamp":"2025-05-27T14:20:59.620Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-27T14:33:31.530Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-27T14:33:31.531Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-27T14:33:31.535Z"}
+{"level":"info","message":"uploading the file Screenshot 2024-08-23 015228.png with the type image/png","service":"media-service","timestamp":"2025-05-27T14:33:31.537Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-27T14:33:31.537Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-27T14:33:31.538Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - h8zft9r0mf5kt0zx2baj","service":"media-service","timestamp":"2025-05-27T14:33:35.167Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-27T17:23:09.840Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-27T17:23:09.848Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T17:23:09.850Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T17:23:19.852Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-27T17:27:02.377Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-27T17:27:02.385Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T17:27:02.387Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T17:27:05.698Z"}
+{"level":"info","message":"Received POST request to url : /api/media/upload","service":"media-service","timestamp":"2025-05-27T17:27:53.353Z"}
+{"level":"info","message":"request body: undefined","service":"media-service","timestamp":"2025-05-27T17:27:53.354Z"}
+{"level":"info","message":"Entering the upload media controller....","service":"media-service","timestamp":"2025-05-27T17:27:53.363Z"}
+{"level":"info","message":"uploading the file Screenshot 2024-12-18 224413.png with the type image/png","service":"media-service","timestamp":"2025-05-27T17:27:53.366Z"}
+{"level":"info","message":"user is 682abd6890be08c8b463fc8b","service":"media-service","timestamp":"2025-05-27T17:27:53.367Z"}
+{"level":"info","message":"uploading to cloudinary is starting...","service":"media-service","timestamp":"2025-05-27T17:27:53.367Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - kna2lioaahnbpkbkhvtx","service":"media-service","timestamp":"2025-05-27T17:28:34.828Z"}
+{"level":"error","message":"errror deleting media from cloudinary ReferenceError: publidId is not defined","service":"media-service","timestamp":"2025-05-27T17:30:50.221Z"}
+{"level":"error","message":"error in the event handler ReferenceError: publidId is not defined","service":"media-service","timestamp":"2025-05-27T17:30:50.222Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-27T17:32:30.084Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-27T17:32:30.091Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-27T17:32:30.093Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-27T17:32:35.511Z"}
+{"level":"info","message":"Media is successfuly deleted","service":"media-service","timestamp":"2025-05-27T17:37:14.874Z"}
+{"level":"info","message":"deleted media 6835cd3f3486b92ceafca430 associated with post 6835f82d0ceb50b54af2cb4b","service":"media-service","timestamp":"2025-05-27T17:37:15.165Z"}
+{"level":"info","message":"Media is successfuly deleted","service":"media-service","timestamp":"2025-05-27T17:37:16.312Z"}
+{"level":"info","message":"deleted media 6835f6427b57be04e7c715df associated with post 6835f82d0ceb50b54af2cb4b","service":"media-service","timestamp":"2025-05-27T17:37:16.699Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-28T06:34:17.259Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-28T06:34:17.283Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-28T06:34:17.289Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-28T06:34:17.660Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-28T09:03:58.953Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-28T09:03:58.960Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-28T09:03:58.963Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-28T09:03:59.573Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-28T09:08:42.750Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-28T09:08:42.758Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-28T09:08:42.760Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-28T09:08:43.153Z"}
+{"level":"info","message":"Connected to rabbitmq","service":"media-service","timestamp":"2025-05-28T09:08:51.101Z"}
+{"level":"info","message":"Subscribed to the event: post.deleted","service":"media-service","timestamp":"2025-05-28T09:08:51.109Z"}
+{"level":"info","message":"Media service is running at port 3003","service":"media-service","timestamp":"2025-05-28T09:08:51.111Z"}
+{"level":"info","message":"conntected to mongo db","service":"media-service","timestamp":"2025-05-28T09:08:51.406Z"}

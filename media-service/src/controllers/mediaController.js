@@ -13,10 +13,10 @@ const uploadMedia = async (req,res) => {
                 message : "File not privided"
             })
         }
-        const {originalName,mimeType,buffer} = req.file;
+        const {originalname,mimetype,buffer} = req.file;
         const userId = req.user.userId;
 
-        logger.info(`uploading the file ${originalName} with the type ${mimeType}`);
+        logger.info(`uploading the file ${originalname} with the type ${mimetype}`);
         logger.info(`user is ${req.user.userId}`);
         logger.info(`uploading to cloudinary is starting...`)
 
@@ -26,10 +26,10 @@ const uploadMedia = async (req,res) => {
     );
         const newMedia = new Media({
             publicId: cloudinaryUploadResult.public_id,
-            originalName,
-            mimeType,
+            originalName: originalname,
+            mimeType: mimetype,
             url : cloudinaryUploadResult.secure_url,
-            userId
+            userId: userId
         })
 
         await newMedia.save();
@@ -44,7 +44,8 @@ const uploadMedia = async (req,res) => {
         logger.error(`error uploading media in the media controller`);
         return res.status(500).json({
             success : false,
-            message : "Internal server error"
+            message : "Internal server error",
+            error
         })
     }
 }

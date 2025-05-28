@@ -1,6 +1,7 @@
 const logger = require('../utils/logger');
 const Post = require('../models/Post');
 const {validationCreatePost} = require('../utils/validation')
+const {publishEvent} = require('../utils/rabbitmq')
 
 async function invalidatePostCache(req,input) {
 
@@ -9,7 +10,7 @@ async function invalidatePostCache(req,input) {
 
     const keys = await req.redisClient.keys("posts:*");
     if(keys.length>0){
-        await redisClient.del(...keys);
+        await req.redisClient.del(...keys);
     }
 }
 
@@ -33,7 +34,14 @@ const createPost = async (req,res) => {
             mediaIds: mediaIds || []
         })
 
+        await publishEvent("post.created",{
+            postId : newPost._id.toString(),
+            userId : req.user.userId.toString(),
+            postContent : content,
+        })
+
         await newPost.save();
+
         await invalidatePostCache(req,newPost._id.toString());
         
         logger.info(`post created successfully: ${newPost}`);
@@ -137,6 +145,13 @@ const deletePost = async (req,res) => {
                 message : "Post not found"
             })
         }
+        //publish an event for deleting the post, then consume this event from media service
+        await publishEvent('post.deleted',{
+            postId : post._id.toString(),
+            userIds: req.user.userId,
+            mediaIds : post.mediaIds
+        })
+
         await invalidatePostCache(req,req.params.id);
         return res.status(202).json({
             success : true,
