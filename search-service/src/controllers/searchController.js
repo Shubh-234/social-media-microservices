@@ -6,17 +6,17 @@ const searchPostController = async (req,res) => {
     try {
         const {query} = req.query;
 
-        const cacheKey = `searchquery:${query.trim().toLowerCase()}`;
+        // const cacheKey = `searchquery:${query.trim().toLowerCase()}`;
 
-        const cacheResults = await req.redisClient.get(cacheKey);
+        // const cacheResults = await req.redisClient.get(cacheKey);
 
-        if(cacheResults){
-            const parsedResults = JSON.parse(cacheResults);
-            if(parsedResults){
-                logger.info(`cache hit: ${query}`);
-                return res.json(parsedResults);
-            }
-        }
+        // if(cacheResults){
+        //     const parsedResults = JSON.parse(cacheResults);
+        //     if(parsedResults){
+        //         logger.info(`cache hit: ${query}`);
+        //         return res.json(parsedResults);
+        //     }
+        // }
         const results = await SearchPost.find({
             $text : {$search : query}
             //search the indexed fields in mongo db database
@@ -25,12 +25,12 @@ const searchPostController = async (req,res) => {
             //score acc to text match 
         }).sort({ score: { $meta: "textScore" } }).limit(10);
 
-         if(results && results.length>0){
-        logger.info(`Cache miss: queried DB and cached results for "${query}"`);
-            req.redisClient.setex(cacheKey,600,JSON.stringify(results));
-         }else{
-            req.redisClient.setex(cacheKey,600,JSON.stringify([]));
-         }
+        //  if(results && results.length>0){
+        // logger.info(`Cache miss: queried DB and cached results for "${query}"`);
+        //     req.redisClient.setex(cacheKey,600,JSON.stringify(results));
+        //  }else{
+        //     req.redisClient.setex(cacheKey,600,JSON.stringify([]));
+        //  }
 
         res.json(results);
     } catch (error) {
