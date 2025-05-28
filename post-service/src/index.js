@@ -25,7 +25,7 @@ try {
     console.log(error)
 }
 
-const redisClient = new Redis(process.env.redis_url || 'redis://localhost:6379');
+const redisClient = new Redis(process.env.redis_url);
 
 app.use(helmet());
 app.use(cors());
