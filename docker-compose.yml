@@ -11,7 +11,7 @@ services:
       - rabbitmq
     environment:
       - redis_url=redis://redis:6379
-      - RABBITMQ_URL=amqp://rabbitmq:5672
+      - rabbitmq_url=amqp://rabbitmq:5672
 
   identity-service:
     build: ./identity-service
