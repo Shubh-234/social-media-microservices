@@ -19,7 +19,7 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-const redisClient = new Redis(process.env.redis_url || 'redis://localhost:6379')
+const redisClient = new Redis(process.env.redis_url)
 
 //rate limiting
 const rateLimitOptions = rateLimit({
@@ -131,5 +131,5 @@ app.listen(PORT,()=> {
     logger.info(`Post service is running at url ${process.env.POST_SERVICE_URL}`);
     logger.info(`Media service is running at port ${process.env.MEDIA_SERVICE_URL}`);
     logger.info(`Search service is running at port ${process.env.SEARCH_SERVICE_URL}`);
-    logger.info(`Redis url: ${process.env.REDIS_URL}`)
+    logger.info(`Redis url: ${process.env.redis_url}`)
 })
